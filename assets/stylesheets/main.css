@@ -1,0 +1,36 @@
+html{
+		min-height: calc(100%);
+		width:calc(100%);
+	}
+	body, .main-wthree{
+		width:calc(100%);
+		min-height: 100vh;
+	}
+	.main-wthree{
+		padding-bottom:2em;
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+		justify-content:center;
+	}
+	.footer{
+		width:100%;
+		position:fixed;
+		bottom:0;
+		left:0
+	}
+	.sin-w3-agile{
+		padding:0;
+	}
+	.login{
+		background-color: #010101;
+    	background-image: linear-gradient(160deg, #010101 0%, #4e6865 100%);
+	}
+	.login-w3 {
+		width: 100%;
+		float: unset;
+		text-align: center;
+	}
+	.main-wthree input[type="submit"]:hover {
+		background: #3e5250;
+	}
