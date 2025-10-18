@@ -1,6 +1,4 @@
-<?php 
-    include('header.php');
-?>
+<?php include('header.php'); ?>
 
 <?php
     include_once('controller/connect.php');
@@ -70,13 +68,9 @@
             </div>
         </div>
         <hr style="margin-bottom: 0px;margin-top: 0px;border-top: 1px solid #eee;">
-        <?php 
-            } 
-        ?>
+        <?php } ?>
 
     </div>
     <div class="clearfix"></div>
 </form>
-<?php 
-    include('footer.php'); 
-?>
+<?php include('footer.php'); ?>

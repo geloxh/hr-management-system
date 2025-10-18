@@ -1,6 +1,4 @@
-<?php 
-    include('header.php');
-?>
+<?php include('header.php'); ?>
 <?php
     include_once('controller/connect.php');
   
@@ -19,7 +17,7 @@
         $denied = "Denied";
         mysqli_query($db,"update leavedetails set LeaveStatus='$denied' where Detail_Id='$deniedid'");
         echo "<script>window.location='leaverequest.php';</script>";
-    }
+      }
 
     $laccept = mysqli_query($db,"SELECT l.*,e.FirstName,e.LastName,lt.Type_of_Name FROM leavedetails l JOIN employee e ON l.EmpId=e.EmployeeId JOIN type_of_leave lt on l.TypesLeaveId=lt.LeaveId WHERE LeaveStatus='Accept'");
     $ldenied = mysqli_query($db,"SELECT l.*,e.FirstName,e.LastName,lt.Type_of_Name FROM leavedetails l JOIN employee e ON l.EmpId=e.EmployeeId JOIN type_of_leave lt on l.TypesLeaveId=lt.LeaveId WHERE LeaveStatus='Denied'");
@@ -78,9 +76,7 @@
       
       <div class="col-md-1" style="text-align: center;"><a href="?id=<?php echo $row['Detail_Id'];?>" title="Accept"><i class="fa fa-check " aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="?msg=<?php echo $row['Detail_Id'];?>" title="Denied"><i class="fa fa-times" style="color: #202a29;" aria-hidden="true"></i></a></div>
     </div><hr style="margin-bottom: 0px;margin-top: 0px;border-top: 1px solid #eee;">
-      <?php 
-        }
-        ?>    
+      <?php } ?>    
 </div>
 
 <div class="validation-form" style="margin-bottom: 0px;margin-top: 10px;">
