@@ -19,3 +19,24 @@
             <div class="panel panel-default bg-light dash-summary">
                 <div class="panel-body">
                     <a href="employee_view.php">
+                        <div class="icon">
+                            <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="four-text">
+                            <h3>Employee</h3>
+                            <h4><?php echo(isset($TotalEmployeeId['empl']))?$TotalEmployeeId['empl']:"";?></h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="panel panel-default bg-light dash-summary">
+                <div class="panel-body">
+                    <a href="leave_request.php">
+                        <div class="icon">
+                            <i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="four-text">
+                            <h3>Leave Request</h3>
+                            <h4><?php echo(isset($totalpendingleave['pendingLeave']))?$totalpendingleave['pendingLeave']:"";
