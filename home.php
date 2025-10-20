@@ -39,4 +39,12 @@
                         </div>
                         <div class="four-text">
                             <h3>Leave Request</h3>
-                            <h4><?php echo(isset($totalpendingleave['pendingLeave']))?$totalpendingleave['pendingLeave']:"";
+                            <h4><?php echo(isset($totalpendingleave['pendingLeave']))?$totalpendingleave['pendingLeave']:"";?></h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+<?php include('footer.php'); ?>
