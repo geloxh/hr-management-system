@@ -44,4 +44,12 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="margin-bottom: 
+    <div class="container-fluid" style="margin-bottom: 30px; margin-top: 10px; background: white;">
+        <div class="row">
+            <h2 style="color: #1abc9c;">Add Leave</h2><hr>
+            <div class="col-md-3 control-label">
+                <label class="input-group">
+                    <span class="input-group-addon">
+                        <i class="fa fa-sun-o" aria-hidden="true"></i>
+                    </span>
+                    <input type="text" name="leaveday" title="Yearly Leave Days" autocomplete="off" maxlength="3" placeholder="Enter Day" value="" required="" class="form-control" style="width: 250px; height: 36px;" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
