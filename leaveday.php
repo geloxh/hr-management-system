@@ -53,3 +53,18 @@
                         <i class="fa fa-sun-o" aria-hidden="true"></i>
                     </span>
                     <input type="text" name="leaveday" title="Yearly Leave Days" autocomplete="off" maxlength="3" placeholder="Enter Day" value="" required="" class="form-control" style="width: 250px; height: 36px;" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+            </div>
+            <label style="color: #008000;">Yearly Leave Days is <?php echo(isset($rom['LeaveDay']))?$rom['LeaveDay']:'0'; ?>.</label>
+        </div>
+        <div class="col-md-4">
+    </div>
+    <div class="row">
+        <div class="col-md-3 form-group">
+            <button type="submit" name="submit" class="btn btn-primary" title="Add">Add</button>
+            <button type="reset" class="btn btn-default" title="Reset">Reset</button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</form>
+<?php include('footer.php'); ?>
