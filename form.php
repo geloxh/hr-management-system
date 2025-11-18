@@ -210,13 +210,6 @@
             </fieldset>
         </form>
     </div>
-    <main>
-     
-    </main>
-    <footer>
-     
-    </footer>
-    <script src="js/scripts.js"></script>
      
 </body>
 </html>
