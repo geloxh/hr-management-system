@@ -1,0 +1,5 @@
+-- HR MANAGEMENT SYSTEM DATABASE
+
+-- Create Database
+CREATE DATABASE IF NOT EXISTS hrms_db;
+USE hrms_db;

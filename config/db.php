@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "hrm";
+    $dbname = "hrms_db";
 
     // Handles create connection
     $conn = new mysqli($servername, $username, $password);
